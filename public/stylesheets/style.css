@@ -1,8 +1,30 @@
 body {
-  padding: 50px;
+  padding: 0px;
+  margin: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.content {
+  min-height: 90vh;
 }
 
 a {
   color: #00B7FF;
+}
+
+.footer {
+  /* display: flex;
+  justify-content: space-between; */
+  background-color: blue;
+  height: 10vh;
+}
+
+.hotline {
+  display: flex;
+  justify-content: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
 }
