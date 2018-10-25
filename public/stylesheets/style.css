@@ -1,3 +1,7 @@
+/* * {
+  border: 1px solid black;
+} */
+
 body {
   padding: 0px;
   margin: 0px;
@@ -14,17 +18,84 @@ a {
 }
 
 .footer {
-  /* display: flex;
-  justify-content: space-between; */
-  background-color: blue;
-  height: 10vh;
+  height: 5vh;
 }
 
 .hotline {
   display: flex;
   justify-content: center;
+  font-size: 18px;
+  font-family: "Calibri", Arial, serif;
 }
 .nav {
   display: flex;
   justify-content: space-between;
+  background-color: lightblue;
+  font-size: 25px;
+  padding: 10px 200px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.missionStatement {
+  font-size: 15px;
+}
+
+.homeQuote {
+  font-family: "Merienda", Arial, serif;
+  font-size: 20px;
+}
+
+.howQuestion {
+  font-size: 40px;
+  font-family: "Dancing Script", Arial, serif;
+  margin: 25px 0;
+  color: blue;
+}
+
+.emotionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4vh 20vw 0px 20vw;
+  font-size: 30px;
+}
+
+.columnOne {
+  display: flex;
+  margin: 0 6vw 0 0;
+}
+
+.columnTwo {
+  display: flex;
+  margin: 0 0 0 6vw;
+}
+
+.columnOneText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0;
+  margin: 0 25px 0 0;
+}
+
+.columnTwoText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0;
+  margin: 0 0 0 25px;
+}
+
+.emotionImage {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.emotionText {
+  margin: 5px 0;
+  height: 39px;
 }
