@@ -1,0 +1,20 @@
+<main>
+    <h2>Congratulations you've created a new quote by:<br><br>
+    {{quote.speaker}}</h2>
+    <div class="quoteContainer">
+        <br>
+        <p>
+            "{{quote.content}}"
+        </p><br>
+        <br>
+        {{!-- Edit quote attempt
+        <a href="/{{quote._id}}/edit">EDIT</a> --}}
+    </div>
+    <a href="/:id/edit">Edit Your Quote</a>
+    <br><br>
+    {{!-- Delete code attempts
+    <form action="/{{quote._id}}?_method=DELETE" method="POST">
+        <button type="submit">DELETE THIS Quote</button> --}}
+    {{!-- </form> --}}
+    <a href="/">Return to Home Page</a>
+</main>
