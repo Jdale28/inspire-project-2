@@ -1,13 +1,13 @@
-// let Quote = require('../Models/Quote')
+let Quote = require('../Models/Quote')
 
 const Feeling = require('../Models/Feeling')
-const feelingList = ['Loved','Happy', 'Joyful', 'Excited', 'Amazed', 'Reflective', 'Betrayed', 'Jealous', 'Self-Pity', 'Sad', 'Afraid', 'Lonely', 'Suffering', 'Disdain', 'Annoyed', 'Angry']
+const name = ['Loved','Happy', 'Joyful', 'Excited', 'Amazed', 'Reflective', 'Betrayed', 'Jealous', 'Self-Pity', 'Sad', 'Afraid', 'Lonely', 'Suffering', 'Disdain', 'Annoyed', 'Angry']
 
-for(var i = 0; i<feelingList.length; i++) {
+for(var i = 0; i<name.length; i++) {
     Feeling.create({
-        feelingList: feelingList[i]
-    }).then((feelingList) => {
-        feelingList.save()
+        name: name[i]
+    }).then((name) => {
+        name.save()
     })
 }
 

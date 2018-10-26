@@ -69,7 +69,7 @@ const quoteController = {
   // redirects back to the SHOW PAGE (not index)
   update: (req, res) => {
     Quote.findByIdAndUpdate(req.params.id, req.body).then((updatedQuote) => {
-      res.redirect(`/${updatedQuote._id}`)
+      res.redirect(`/quote/${updatedQuote._id}`)
     })
   },
   //= =====================
@@ -79,7 +79,7 @@ const quoteController = {
   // redirects back to index page "/"
   delete: (req, res) => {
     Quote.findByIdAndRemove(req.params.id).then(() => {
-      res.redirect('/')
+      res.redirect('/quote')
     })
   }
 }
