@@ -22,14 +22,17 @@
 <div class="emotionContainer">
     <div class="columnOne">
     <div class="columnOneText">
-        <button type="button" class="btn btn-outline-success emotionText" data-toggle="modal" data-target="#exampleModal">Loved</button>
+        {{#each feeling}}
+        <button type="button" class="btn btn-outline-primary emotionText" data-toggle="modal" data-target="#exampleModal" id="{{_id}}">{{name}}</button>
+        {{/each}}
+        {{!-- <button type="button" class="btn btn-outline-success emotionText" data-toggle="modal" data-target="#exampleModal">Loved</button>
         <button type="button" class="btn btn-outline-success emotionText" data-toggle="modal" data-target="#exampleModal">Happy</button>
         <button type="button" class="btn btn-outline-success emotionText" data-toggle="modal" data-target="#exampleModal">Joyful</button>
         <button type="button" class="btn btn-outline-primary emotionText" data-toggle="modal" data-target="#exampleModal">Excited</button>
         <button type="button" class="btn btn-outline-primary emotionText" data-toggle="modal" data-target="#exampleModal">Amazed</button>
         <button type="button" class="btn btn-outline-primary emotionText" data-toggle="modal" data-target="#exampleModal">Reflective</button>
         <button type="button" class="btn btn-outline-warning emotionText" data-toggle="modal" data-target="#exampleModal">Self-Pity</button>
-        <button type="button" class="btn btn-outline-warning emotionText" data-toggle="modal" data-target="#exampleModal">Jealous</button>
+        <button type="button" class="btn btn-outline-warning emotionText" data-toggle="modal" data-target="#exampleModal">Jealous</button> --}}
     </div>
     <div class="columnOneImage">
         <div class="emotionImage">😍</div>
@@ -53,7 +56,7 @@
         <div class="emotionImage">😭</div>
         <div class="emotionImage">🤬</div>
     </div>
-    <div class="columnTwoText">
+    {{!-- <div class="columnTwoText">
         <button type="button" class="btn btn-outline-warning emotionText" data-toggle="modal" data-target="#exampleModal">Disdain</button>
         <button type="button" class="btn btn-outline-danger emotionText" data-toggle="modal" data-target="#exampleModal">Betrayed</button>
         <button type="button" class="btn btn-outline-danger emotionText" data-toggle="modal" data-target="#exampleModal">Sad</button>
@@ -62,22 +65,24 @@
         <button type="button" class="btn btn-outline-dark emotionText" data-toggle="modal" data-target="#exampleModal">Afraid</button>
         <button type="button" class="btn btn-outline-dark emotionText" data-toggle="modal" data-target="#exampleModal">Suffering</button>
         <button type="button" class="btn btn-outline-dark emotionText" data-toggle="modal" data-target="#exampleModal">Angry</button>
-    </div>
+    </div> --}}
     </div>
 </div>
 
+        
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+{{#each quote}}
+<div class="modal fade {{feeling}}" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">{{quote.speaker}}</h5>
+        <h5 class="modal-title" id="exampleModalLabel">{{speaker}}</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        {{quote.content}}
+        {{content}}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Shuffle</button>
@@ -86,6 +91,7 @@
     </div>
   </div>
 </div>
+{{/each}}
 
 {{!-- One button needs to query the database for a different quote than was just populated --}}
 {{!-- Another directs you to your saved quote --}}
