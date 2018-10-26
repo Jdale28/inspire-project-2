@@ -3,6 +3,7 @@ const userController = require('../controller/user')
 const router = express.Router()
 const app = require('../controller/app')
 const quoteController = require('../controller/quote')
+const feelingController = require('../controller/feeling')
 
 /* GET home page. */
 router.get('/', app.index)
@@ -29,6 +30,8 @@ router.put('/:id', quoteController.update)
 router.patch('/:id', quoteController.update)
 // Create a DELETE delete route "/:id" that triggers the quote controller delete function
 router.delete('/:id', quoteController.delete)
+
+router.get('/feeling', feelingController.list)
 
 
 

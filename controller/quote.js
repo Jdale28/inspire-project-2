@@ -2,6 +2,8 @@
 // REQUIREMENTS
 //= =====================
 // require the Quote model
+const User = require('../Models/User')
+const Feeling = require('../Models/Feeling')
 const Quote = require('../Models/Quote')
 
 const quoteController = {
