@@ -14,16 +14,13 @@ router.get('/user', userController.index)
 router.get('/feeling', feelingController.list)
 
 // Routes for a new Quote
+router.get('/quote', quoteController.list)
 router.get('/new', quoteController.new)
-router.get('/quote/:id', quoteController.show)
-router.post('/quote', quoteController.create)
+// router.get('/:id', quoteController.show)
+// router.post('/quote', quoteController.create)
 // router.get('/:id/edit', quoteController.edit)
 // router.put('/:id', quoteController.update)
 // router.patch('/:id', quoteController.update)
 // router.delete('/:id', quoteController.delete)
-
-
-
-
 
 module.exports = router
