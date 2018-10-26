@@ -9,20 +9,20 @@ const quoteController = {
     })
   },
   new: (req, res) => {
-    res.render('/quote/new')
-  }
-//   show: (req, res) => {
-//     Quote.findById(req.params.id).then((quote) => {
-//       res.render('/show', {
-//         quote: quote
-//       })
-//     })
-//   },
-//   create: (req, res) => {
-//     Quote.create(req.body).then((newQuote) => {
-//       res.redirect(`/${newQuote._id}`)
-//     })
-//   },
+    res.render('quote/new')
+  },
+  show: (req, res) => {
+    Quote.findById(req.params.id).then((quote) => {
+      res.render('quote/show', {
+        quote: quote
+      })
+    })
+  },
+  create: (req, res) => {
+    Quote.create(req.body).then((newQuote) => {
+      res.redirect(`/${newQuote._id}`)
+    })
+  },
 //   edit: (req, res) => {
 //     Quote.findById(req.params.id).then(quote => {
 //       res.render('/edit', { quote: quote })
