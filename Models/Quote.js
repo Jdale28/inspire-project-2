@@ -8,7 +8,10 @@ const Quote = mongoose.Schema({
       type: Schema.Types.ObjectId,
       ref: 'Feeling'
   }],
-  usersFavorited: []
+  usersFavorited: [{
+      type: Schema.Types.ObjectId,
+      ref: 'User'
+  }]
 })
 
 module.exports = mongoose.model('Quote', Quote)

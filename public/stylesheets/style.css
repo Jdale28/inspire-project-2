@@ -25,6 +25,7 @@ a {
   display: flex;
   justify-content: center;
   font-size: 18px;
+  margin: 10px 0 0 0;
   font-family: "Calibri", Arial, serif;
 }
 .nav {
@@ -32,12 +33,17 @@ a {
   justify-content: space-between;
   background-color: lightblue;
   font-size: 25px;
+  margin: 8px 0 0 0;
   padding: 10px 200px;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+a:hover, a:focus { 
+  text-decoration: none;
 }
 
 .missionStatement {
@@ -93,9 +99,4 @@ a {
 .emotionImage {
   margin: 10px 0;
   padding: 0;
-}
-
-.emotionText {
-  margin: 5px 0;
-  height: 39px;
 }
