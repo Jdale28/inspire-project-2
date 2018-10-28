@@ -4,8 +4,7 @@ const Quote = require('../Models/Quote')
 const User = require('../Models/User')
 
 const loved = new Feeling({
-    name: "Loved",
-    icon: "😍"
+    name: "Loved"
 })
 const happy = new Feeling({
     name: "Happy"
@@ -53,22 +52,22 @@ const angry = new Feeling({
     name: "Angry"
 })
 
-const clintonOne = new Quote ({
+const betrayedOne = new Quote ({
     content: "That depends upon what the meaning of the word 'is' is.",
     speaker: "Bill Clinton, President 1993-2001",
     feeling: betrayed
 })
-const kennedyOne = new Quote ({
+const reflectiveOne = new Quote ({
     content: "Ask not what your country can do for you, ask what you can do for your country.",
     speaker: "John F. Kennedy, President 1961-63",
     feeling: reflective
 })
-const carolOne = new Quote ({
+const reflectiveTwo = new Quote ({
     content: "Only I can change my life. No one can do it for me.",
     speaker: "Carol Burnett, American Author",
     feeling: reflective
 })   
-const spencerOne = new Quote ({
+const reflectiveThree = new Quote ({
     content: "I'm tired",
     speaker: "Spencer",
     feeling: reflective
@@ -86,7 +85,7 @@ const newUser = new User({
 User.remove({})
 .then(()=> Quote.remove({}))
 .then(()=> Feeling.remove({}))
-.then(()=> Quote.insertMany([clintonOne, kennedyOne, carolOne, spencerOne]))
+.then(()=> Quote.insertMany([betrayedOne, reflectiveOne, reflectiveTwo, reflectiveThree]))
 .then(()=> Feeling.insertMany([loved, happy, joyful, excited, amazed, reflective, selfPity, jealous, disdain, betrayed, sad, lonely, annoyed, afraid, suffering, angry]))
 .then(()=> newUser.save())
 .then(()=> console.log("DATABASE SEED SUCCESS"))

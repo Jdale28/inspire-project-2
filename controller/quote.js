@@ -23,11 +23,13 @@ const quoteController = {
       res.redirect(`/${newQuote._id}`)
     })
   },
-//   edit: (req, res) => {
-//     Quote.findById(req.params.id).then(quote => {
-//       res.render('/edit', { quote: quote })
-//     })
-//   },
+  edit: (req, res) => {
+    Quote.findById(req.params.id).then(quote => {
+      console.log("hit one")
+      res.render(`quote/edit`, { quote: quote })
+      console.log("hit two")
+    })
+  },
 //   update: (req, res) => {
 //     Quote.findByIdAndUpdate(req.params.id, req.body).then((updatedQuote) => {
 //       res.redirect(`/${updatedQuote._id}`)
