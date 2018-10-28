@@ -78,7 +78,7 @@ const newUser = new User({
     name: "Jordan",
     age: 30,
     sex: "male",
-    favoriteQuotes: [carolOne, kennedyOne],
+    favoriteQuotes: [reflectiveThree, reflectiveOne, betrayedOne],
     feeling: [loved, reflective]
 })
 
