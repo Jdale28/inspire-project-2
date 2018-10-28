@@ -30,11 +30,11 @@ const quoteController = {
       console.log("hit two")
     })
   },
-//   update: (req, res) => {
-//     Quote.findByIdAndUpdate(req.params.id, req.body).then((updatedQuote) => {
-//       res.redirect(`/${updatedQuote._id}`)
-//     })
-//   },
+  update: (req, res) => {
+    Quote.findByIdAndUpdate(req.params.id, req.body).then((updatedQuote) => {
+      res.redirect(`/${updatedQuote._id}/show`)
+    })
+  },
 //   delete: (req, res) => {
 //     Quote.findByIdAndRemove(req.params.id).then(() => {
 //       res.redirect('/')
