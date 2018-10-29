@@ -202,6 +202,66 @@ const amazedSix = new Quote ({
     speaker: "Craig D. Lounsbrough, American counselor & author",
     feeling: amazed
 })
+const reflectiveOne = new Quote ({
+    content: "This past, present, and future are the province of each of us, and it is by our hand that they are ruled.",
+    speaker: "Billy Dale, Father",
+    feeling: reflective
+})
+const reflectiveTwo = new Quote ({
+    content: "Ask not what your country can do for you, but what you can do for your country.",
+    speaker: "John F. Kennedy, 35th President 1961-63",
+    feeling: reflective
+})
+const reflectiveThree = new Quote ({
+    content: "The individual who says it is not possible should move out of the way of those doing it.",
+    speaker: "Tricia Cunningham, American author",
+    feeling: reflective
+})
+const reflectiveFour = new Quote ({
+    content: "Can you remember who you were, before the world told you who you should be?",
+    speaker: "Danielle LaPorte, Canadian author",
+    feeling: reflective
+})
+const reflectiveFive = new Quote ({
+    content: "Self-trust is the first secret of success.",
+    speaker: "Ralph Waldo Emerson, American author",
+    feeling: reflective
+})
+const reflectiveSix = new Quote ({
+    content: "We don't see things as they are, we see them as we are.",
+    speaker: "Anais Nin, French writer",
+    feeling: reflective
+})
+const selfPityOne = new Quote ({
+    content: "I never saw a wild thing sorry for itself. A small bird will drop frozen dead from a bough without ever having felt sorry for itself.",
+    speaker: "D.H. Lawrence, English writer & poet",
+    feeling: selfPity
+})
+const selfPityTwo = new Quote ({
+    content: "All depression has its roots in self-pity, and all self-pity is rooted in people taking themselves too seriously.",
+    speaker: "Tom Robins, American novelist",
+    feeling: selfPity
+})
+const selfPityThree = new Quote ({
+    content: "Self pity is easily the most destructive of the non-pharmaceutical narcotics; it is addictive, gives momentary pleasure and separates the victim from reality.",
+    speaker: "John Gardner, American writer",
+    feeling: selfPity
+})
+const selfPityFour = new Quote ({
+    content: "It's all right to sit on your pity pot every now and again. Just be sure to flush when you are finished.",
+    speaker: "Debbie Macomber, American author",
+    feeling: selfPity
+})
+const selfPityFive = new Quote ({
+    content: "Self-pity is spiritual suicide. It is an indefensible self-mutilation of the soul.",
+    speaker: "Anthon St. Maarten, Psychic Medium",
+    feeling: selfPity
+})
+const selfPitySix = new Quote ({
+    content: "No one can please a man who is not at peace with himself.",
+    speaker: "Bamigboye Olurotimi, Nigerian author",
+    feeling: selfPity
+})
 const sadOne = new Quote ({
     content: "Happiness is not something you postpone for the future; it is something you design for the present.",
     speaker: "Jim Rohn, American entrepreneur and author",
@@ -231,7 +291,13 @@ const sadSix = new Quote ({
     content: "I do believe that if you haven't learnt about sadness, you cannot appreciate happiness.",
     speaker: "Nana Mouskouri, Greek singer",
     feeling: sad
-})  
+})
+const sadSix = new Quote ({
+    content: "The only time we waste is the time we spend thinking we are alone.",
+    speaker: "Mitch Albom",
+    feeling: lonely
+})
+
 
 
 const newUser = new User({
@@ -245,15 +311,17 @@ const newUser = new User({
 User.remove({})
 .then(()=> Quote.remove({}))
 .then(()=> Feeling.remove({}))
-.then(()=> Quote.insertMany([lovedOne, lovedTwo, lovedThree, lovedFour, lovedFive, lovedSix, happyOne, happyTwo, happyThree, happyFour, happyFive, happySix]))
+.then(()=> Quote.insertMany([
+    lovedOne, lovedTwo, lovedThree, lovedFour, lovedFive, lovedSix, 
+    happyOne, happyTwo, happyThree, happyFour, happyFive, happySix,
+    joyOne, joyTwo, joyThree, joyFour, joyFive, joySix,
+    excitedOne, excitedTwo, excitedThree, excitedFour, excitedFive, excitedSix,
+    amazedOne, amazedTwo, amazedThree, amazedFour, amazedFive, amazedSix,
+    sadOne, sadTwo, sadThree, sadFour, sadFive, sadSix,
+    reflectiveOne, reflectiveTwo, reflectiveThree, reflectiveFour, reflectiveFive, reflectiveSix,
+]))
 .then(()=> Feeling.insertMany([loved, happy, joyful, excited, amazed, reflective, selfPity, jealous, disdain, betrayed, sad, lonely, annoyed, afraid, suffering, angry]))
 .then(()=> newUser.save())
 .then(()=> console.log("DATABASE SEED SUCCESS"))
 .then(()=> mongoose.connection.close())
 
-    // lovedOne, lovedTwo, lovedThree, lovedFour, lovedFive, lovedSix,
-    // happyOne, happyTwo, happyThree, happyFour, happyFive, happySix,
-    // joyOne, joyTwo, joyThree, joyFour, joyFive, joySix,
-    // excitedOne, excitedTwo, excitedThree, excitedFour, excitedFive, excitedSix,
-    // amazedOne, amazedTwo, amazedThree, amazedFour, amazedFive, amazedSix,
-    // sadOne, sadTwo, sadThree, sadFour, sadFive, sadSix,
