@@ -111,3 +111,15 @@ a:hover, a:focus {
 .disappear {
   display: none;
 }
+
+.quote-list-container {
+  display: flex;
+  width: 100vw;
+}
+.card {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 30vw;
+  min-height: 30vh;
+  margin: 2vh 0;
+}

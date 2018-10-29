@@ -8,6 +8,7 @@ const Quote = mongoose.Schema({
       type: Schema.Types.ObjectId,
       ref: 'Feeling'
   }],
+  icon: String,
 })
 
 module.exports = mongoose.model('Quote', Quote)
