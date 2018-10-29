@@ -2,7 +2,7 @@
 <h2>Edit This Quote!</h2>
 	<a href="/">Return to Home Page</a>
 	<div id="edit-form" class="quote-container-show">
-    <form action="/{{quote._id}}?_method=PUT" method="POST">
+    <form action="/{{quote._id}}?_method=PATCH" method="POST">
       <div>
         <label for="name">Content: </label>
         <input type="text" name="name" value="{{quote.content}}">
@@ -11,6 +11,6 @@
         <label for="description">Speaker: </label>
         <input type="text" name="description" value="{{quote.speaker}}">
       </div>
-      <button type="submit">Create New Quote</button>
+      <button type="submit">Submit this updated Quote</button>
     </form>
 	</div>
