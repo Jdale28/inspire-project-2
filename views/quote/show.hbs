@@ -7,14 +7,13 @@
             "{{quote.content}}"
         </p><br>
         <br>
-        {{!-- Edit quote attempt
-        <a href="/{{quote._id}}/edit">EDIT</a> --}}
     </div>
-    <a href="/{{quote._id}}/edit">Edit Your Quote</a>
+    {{!-- edit quote --}}
+    <a href="/quote/{{quote._id}}/edit">Edit Your Quote</a>
     <br><br>
-    {{!-- Delete code attempts
-    <form action="/{{quote._id}}?_method=DELETE" method="POST">
-        <button type="submit">DELETE THIS Quote</button> --}}
-    {{!-- </form> --}}
+    {{!-- Delete quote --}}
+    {{!-- <form action="/{{quote._id}}?_method=DELETE" method="POST">
+        <button type="submit">Delete this Quote</button>
+    </form> --}}
     <a href="/">Return to Home Page</a>
 </main>

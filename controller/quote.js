@@ -9,24 +9,31 @@ const quoteController = {
       res.render('quote/list', {quote: quote})
     })
   },
+  update: (req, res) => {
+    console.log(req.body)
+    console.log(req.params.id)
+    Quote.findByIdAndUpdate(req.params.id, req.body)
+    .then(updatedQuote => {
+      // res.redirect(`/quote/${updatedQuote._id}`)
+      res.send(updatedQuote)
+    })
+  },
+  show: (req, res) => {
+    console.log("show")
+    Quote.findById(req.params.id).then((quote) => {
+      res.render('quote/show', {quote: quote})
+    })
+  },
   new: (req, res) => {
     console.log("new")
     Feeling.find().then((feeling) => {
       res.render('quote/new', {feeling: feeling})
     })
   },
-  show: (req, res) => {
-    console.log("show")
-    Quote.findById(req.params.id).then((quote) => {
-      res.render('quote/show', {
-        quote: quote
-      })
-    })
-  },
   create: (req, res) => {
     console.log(req.body)
     Quote.create(req.body).then((newQuote) => {
-      res.redirect(`/${newQuote._id}`)
+      res.redirect(`/quote/${newQuote._id}`)
     })
   },
   edit: (req, res) => {
@@ -35,17 +42,11 @@ const quoteController = {
       res.render(`quote/edit`, { quote: quote })
     })
   },
-  update: (req, res) => {
-    console.log("update")
-    Quote.findByIdAndUpdate(req.params.id, req.body).then((updatedQuote) => {
-      res.redirect(`/${updatedQuote._id}`)
-    })
-  },
-//   delete: (req, res) => {
-//     Quote.findByIdAndRemove(req.params.id).then(() => {
-//       res.redirect('/')
-//     })
-//   }
+  // delete: (req, res) => {
+  //   Quote.findByIdAndRemove(req.params.id).then(() => {
+  //     res.redirect('/', {quote: quote})
+  //   })
+  // }
 }
 
 module.exports = quoteController
