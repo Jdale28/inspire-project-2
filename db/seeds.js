@@ -52,6 +52,36 @@ const angry = new Feeling({
     name: "Angry"
 })
 
+const lovedOne = new Quote ({
+    content: "The greatest thing you'll ever learn is to love and be loved in return.",
+    speaker: "Moulin Rouge, 2001",
+    feeling: loved
+})
+const lovedTwo = new Quote ({
+    content: "Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.",
+    speaker: "Lao Tzu, Chinese Philosopher",
+    feeling: loved
+})
+const lovedThree = new Quote ({
+    content: "Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that.",
+    speaker: "Martin Luther King, Jr., Civil Rights Activist",
+    feeling: loved
+})
+const lovedFour = new Quote ({
+    content: "Love all, truth a few, do wrong to none.",
+    speaker: "William Shakespeare, Author & Poet",
+    feeling: loved
+})
+const lovedFive = new Quote ({
+    content: "A dog is the only thing on Earth that loves you more than you love yourself.",
+    speaker: "Josh Billings, American Humorist",
+    feeling: loved
+})
+const lovedSix = new Quote ({
+    content: "A flower cannot blossom without sunshine, and man cannot live without love.",
+    speaker: "Max Muller, German Philologist",
+    feeling: loved
+})
 const betrayedOne = new Quote ({
     content: "That depends upon what the meaning of the word 'is' is.",
     speaker: "Bill Clinton, President 1993-2001",
@@ -85,7 +115,7 @@ const newUser = new User({
 User.remove({})
 .then(()=> Quote.remove({}))
 .then(()=> Feeling.remove({}))
-.then(()=> Quote.insertMany([betrayedOne, reflectiveOne, reflectiveTwo, reflectiveThree]))
+.then(()=> Quote.insertMany([lovedOne, lovedTwo, lovedThree, lovedFour, lovedFive, lovedSix, betrayedOne, reflectiveOne, reflectiveTwo, reflectiveThree]))
 .then(()=> Feeling.insertMany([loved, happy, joyful, excited, amazed, reflective, selfPity, jealous, disdain, betrayed, sad, lonely, annoyed, afraid, suffering, angry]))
 .then(()=> newUser.save())
 .then(()=> console.log("DATABASE SEED SUCCESS"))
