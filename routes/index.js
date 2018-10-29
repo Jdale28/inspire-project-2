@@ -19,8 +19,8 @@ router.get('/new', quoteController.new)
 router.get('/:id', quoteController.show)
 router.post('/quote', quoteController.create)
 router.get('/:id/edit', quoteController.edit)
-router.put('/:id', quoteController.update)
-router.patch('/:id', quoteController.update)
+// router.put('/:id', quoteController.update)
+router.patch('/quote/:id', quoteController.update)
 // router.delete('/:id', quoteController.delete)
 
 module.exports = router

@@ -11,7 +11,9 @@ const quoteController = {
   },
   new: (req, res) => {
     console.log("new")
-    res.render('quote/new')
+    Feeling.find().then((feeling) => {
+      res.render('quote/new', {feeling: feeling})
+    })
   },
   show: (req, res) => {
     console.log("show")
@@ -22,7 +24,7 @@ const quoteController = {
     })
   },
   create: (req, res) => {
-    console.log("create")
+    console.log(req.body)
     Quote.create(req.body).then((newQuote) => {
       res.redirect(`/${newQuote._id}`)
     })
