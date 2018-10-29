@@ -43,8 +43,9 @@ const quoteController = {
     })
   },
   delete: (req, res) => {
+    console.log(req.body)
     Quote.findByIdAndRemove(req.params.id).then(() => {
-      res.redirect('/', {quote: quote})
+      res.redirect('/quote')
     })
   }
 }

@@ -20,6 +20,6 @@ router.get('/quote/:id', quoteController.show)
 router.post('/quote', quoteController.create)
 router.get('/quote/:id/edit', quoteController.edit)
 router.put('/quote/:id', quoteController.update)
-// router.delete('/quote/:id', quoteController.delete)
+router.delete('/quote/:id', quoteController.delete)
 
 module.exports = router
