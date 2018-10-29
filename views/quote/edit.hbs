@@ -4,12 +4,12 @@
 	<div id="edit-form" class="quote-container-show">
     <form action="/quote/{{quote._id}}?_method=PATCH" method="POST">
       <div>
-        <label for="name">Content: </label>
-        <input type="text" name="name" value="{{quote.content}}">
+        <label for="content">Content: </label>
+        <input type="text" name="content" value="{{quote.content}}">
       </div>
       <div>
-        <label for="description">Speaker: </label>
-        <input type="text" name="description" value="{{quote.speaker}}">
+        <label for="speaker">Speaker: </label>
+        <input type="text" name="speaker" value="{{quote.speaker}}">
       </div>
       <button type="submit">Submit this updated Quote</button>
     </form>

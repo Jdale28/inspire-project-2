@@ -14,9 +14,9 @@ const quoteController = {
     console.log(req.params.id)
     Quote.findByIdAndUpdate(req.params.id, req.body)
     .then(updatedQuote => {
-      // res.redirect(`/quote/${updatedQuote._id}`)
-      res.send(updatedQuote)
+      res.redirect(`/quote/${updatedQuote._id}`)
     })
+  
   },
   show: (req, res) => {
     console.log("show")
@@ -42,11 +42,11 @@ const quoteController = {
       res.render(`quote/edit`, { quote: quote })
     })
   },
-  // delete: (req, res) => {
-  //   Quote.findByIdAndRemove(req.params.id).then(() => {
-  //     res.redirect('/', {quote: quote})
-  //   })
-  // }
+  delete: (req, res) => {
+    Quote.findByIdAndRemove(req.params.id).then(() => {
+      res.redirect('/', {quote: quote})
+    })
+  }
 }
 
 module.exports = quoteController

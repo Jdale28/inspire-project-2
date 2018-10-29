@@ -4,7 +4,10 @@ Here are all of the quotes available
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">"{{content}}"</h5>
-    <h2 class="card-title">{{speaker}}</h2>
+    <h6 class="card-title">{{speaker}}</h6>
+    <form action="/{{quote._id}}?_method=DELETE" method="POST">
+      <button type="submit">delete this quote</button>
+    </form>
   </div>
 </div>
 {{/each}}
