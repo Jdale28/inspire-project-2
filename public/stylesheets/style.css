@@ -109,11 +109,26 @@ a:hover, a:focus {
   width: 100vw;
 }
 .card {
-  display: inline-flex;
+  display: inline-flex;;
   flex-wrap: wrap;
   width: 30vw;
   min-height: 30vh;
   margin: 2vh 0;
+}
+
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.card-path {
+  margin: 5vh 1vw 0 1vw;
+  font-size: .95rem;
+  border: 1px solid black;
+  padding: 8px 8px;
 }
 
 .modal-content {
@@ -139,6 +154,37 @@ a:hover, a:focus {
   margin: 0 25vw 0 20vh;
 }
 
-.createHeader, .userHeader, .quoteListHeader {
+.createHeader, .userHeader, .quoteListHeader, .newResultHeader {
+  font-family: "Dancing Script", Arial, serif;
+  font-size: 5rem;
   margin: 2vh 0 0 0;
+}
+
+.createHeader {
+  margin: 2vh 0 3vh 0;
+}
+
+.createPageText, .newSpeaker {
+  font-family: "Calibri", Arial, serif;
+  font-size: 1.65rem;
+}
+
+.newQuoteContent, .newQuoteSpeaker, .newQuoteFeeling {
+  font-size: 1.5rem;
+  color: blue;
+  margin: 4vh 0;
+}
+
+.newQuoteContent {
+  margin: 10vh 0 0 0;
+}
+
+.newQuoteCreateButton {
+  font-size: 1.5rem;
+  padding: 1.5vh;
+}
+
+.newContent {
+  font-size: 3rem;
+  font-family: 'Marck Script', Arial, sans-serif;
 }

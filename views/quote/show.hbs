@@ -1,19 +1,17 @@
 <main>
-    <h2>You've created a quote by:<br><br>
-    {{quote.speaker}}</h2>
-    <div class="quoteContainer">
-        <br>
-        <p>
-            "{{quote.content}}"
-        </p><br>
-        <br>
-    </div>
+    <h2 class="newResultHeader">You've created this quote:<br><br></h2>
+    <p class="newContent">
+        "{{quote.content}}"
+    </p>
+    <h3 class="newSpeaker">{{quote.speaker}}</h3>
+
     {{!-- edit quote --}}
-    <a href="/quote/{{quote._id}}/edit">Edit Your Quote</a>
+    <a class="card-path" href="/quote/{{quote._id}}/edit">Edit Your Quote</a>
     <br><br>
     {{!-- Delete quote --}}
     <form action="/quote/{{quote._id}}?_method=DELETE" method="POST">
         <button type="submit">Delete this Quote</button>
     </form>
+
     <a href="/">Return to Home Page</a>
 </main>

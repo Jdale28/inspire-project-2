@@ -47,3 +47,19 @@ $('.shuffle').click(function (e) {
   let num = Math.floor(Math.random() * Math.floor(quote.length))
   $(quote[num]).removeClass('disappear')
 })
+
+$('.newQuoteCreateButton').hover(function(){
+  $(this).css("background-color", "blue")
+  $(this).css("color", "white")
+  }, function(){
+  $(this).css("background-color", "white")
+  $(this).css("color", "black")
+})
+
+$('.card-path').hover(function(){
+  $(this).css("background-color", "blue")
+  $(this).css("color", "white")
+  }, function(){
+  $(this).css("background-color", "white")
+  $(this).css("color", "black")
+})

@@ -4,19 +4,12 @@
 
 <div class="quote-list-container"></div>
 {{#each quote}}
-
-  <div class="card" style="width: 18rem;">
+  <div class="card cardContent" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">"{{content}}"</h5>
-      <h6 class="card-title">{{speaker}}</h6>
-      <a href="/quote/{{_id}}">Edit or Delete this Quote</a>
+      <h6 class="card-speaker">{{speaker}}</h6>
+      <a class="card-path" href="/quote/{{_id}}">Edit or Delete this Quote</a>
     </div>
   </div>
-
 {{/each}}
 </div>
-
-
-
-{{!-- Add button "Edit this Quote" that routes to edit.hbs
-On edit.hbs, add "delete this quote" form --}}
