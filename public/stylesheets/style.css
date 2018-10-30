@@ -9,9 +9,14 @@ body {
   text-align: center;
 }
 
-.content {
-  min-height: 90vh;
-  /* align-content: center; */
+#inspire-name {
+  font-family: 'Great Vibes', Arial, sans-serif;
+  font-size: 6rem;
+  margin: 2vh 0 0 0;
+}
+
+.content{
+  min-height: 89vh;
 }
 
 .custom-select {
@@ -54,58 +59,45 @@ a:hover, a:focus {
 }
 
 .missionStatement {
-  font-size: 15px;
+  font-size: 1.1rem;
 }
 
 .homeQuote {
   font-family: "Merienda", Arial, serif;
   font-size: 20px;
+  margin: 0;
 }
 
 .howQuestion {
   font-size: 40px;
   font-family: "Dancing Script", Arial, serif;
-  margin: 25px 0;
+  margin: 0vh 0;
   color: blue;
 }
 
 .emotionContainer {
   display: flex;
+  width: 60vw;
   justify-content: center;
   align-items: center;
-  margin: 4vh 20vw 0px 20vw;
-  font-size: 30px;
+  margin: 1vh 20vw 0vh 20vw;
 }
 
-.columnOne {
-  display: flex;
-  margin: 0;
-}
-
-.columnTwo {
-  display: flex;
-  margin: 0 0 0 6vw;
+.btn {
+  width: 10vw;
+  padding: 1rem, .75rem;
+  font-size: 1.5rem;
+  margin: 1.5vh 2vw;
 }
 
 .columnOneText {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 5px 0;
-  margin: 0 25px 0 80px;
-}
-
-.columnTwoText {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 5px 0;
-  margin: 0 0 0 25px;
-}
-
-.emotionImage {
-  margin: 10px 0;
-  padding: 0;
+  width: 40vw;
+  height: 50vh;
 }
 
 .disappear {
@@ -122,4 +114,31 @@ a:hover, a:focus {
   width: 30vw;
   min-height: 30vh;
   margin: 2vh 0;
+}
+
+.modal-content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 60vh;
+  width: 40vw;
+  background-color: black;
+  padding: 0 2vw;
+}
+
+.modal-title {
+  font-family: 'Marck Script', Arial, sans-serif;
+  font-size: 2.7rem;
+  color: white;
+}
+.quote-speaker {
+  font-size: 1.5rem;
+  color: white;
+}
+#exampleModal {
+  margin: 0 25vw 0 20vh;
+}
+
+.createHeader, .userHeader, .quoteListHeader {
+  margin: 2vh 0 0 0;
 }

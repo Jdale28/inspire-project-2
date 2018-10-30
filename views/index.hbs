@@ -1,16 +1,14 @@
 {{!-- Upper header content on homepage --}}
-<h1>{{title}}</h1>
+<h1 id="inspire-name">{{title}}</h1>
 <div class="missionStatement">
     <p>Our concept is simple: The World can be hard. It can knock you down and sometimes you can’t find you way back
         onto your feet.
         <br>At {{title}}, at your fingertips are the words and powerful emotions of mankind’s most inspirational
         speakers, influencers and humanitarians.
         <br>They’re all here with one mission: to Inspire you, to motivate you, and to remind you of the power of words
-        and the compassion of the human spirit.</p>
-
-    <p>That’s not all -- you’ll be able to connect with people from around the world and share your own inspirations.
-        <br>Not a wordsmith? No problem, simply send some of your favorite quotes to help people through the tough
-        times. Because remember:</p>
+        and the compassion of the human spirit.
+        <br><br>Always Remember:
+        </p>
 </div>
 <p class="homeQuote">“You cannot do a kindness too soon, for you never know how soon it will be too late.”
     <br>-Ralph Waldo Emerson, American Author</p>
@@ -20,17 +18,10 @@
 
 {{!-- Contains the emojis, texts and buttons associated with user feelings --}}
 <div class="emotionContainer">
-    <div class="columnOne">
     <div class="columnOneText">
         {{#each feeling}}
         <button type="button" class="btn btn-outline-primary emotionText" data-toggle="modal" data-target="#exampleModal" id="{{_id}}">{{name}}</button>
         {{/each}}
-    </div>
-    </div>
-    <div class="columnTwo">
-        <div class="columnTwoImage">
-
-    </div>
     </div>
 </div>
         
@@ -39,15 +30,13 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">{{speaker}}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
         </button>
       </div>
       {{#each quote}}
       <div class="popup {{feeling}}">
         <h5 class="modal-title" id="exampleModalLabel">"{{content}}"</h5>
         <div class="modal-body">
-            <p>{{speaker}}</p>
+            <p class="quote-speaker">{{speaker}}</p>
         </div>
       </div>
       {{/each}}
@@ -60,5 +49,7 @@
   </div>
 </div>
 
-{{!-- One button needs to query the database for a different quote than was just populated --}}
-{{!-- Another directs you to your saved quote --}}
+{{!-- Version Two homepage Edit Text
+<p>That’s not all -- you’ll be able to connect with people from around the world and share your own inspirations.
+<br>Not a wordsmith? No problem, simply send some of your favorite quotes to help people through the tough
+times. Because remember:</p> --}}

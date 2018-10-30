@@ -220,6 +220,126 @@ const selfPitySix = new Quote ({
     speaker: "Bamigboye Olurotimi, Nigerian author",
     feeling: selfPity
 })
+const jealousOne = new Quote ({
+    content: "The jealous are possessed by a mad devil and a dull spirit at the same time.",
+    speaker: "Johann Kaspar Lavater",
+    feeling: jealous
+})
+const jealousTwo = new Quote ({
+    content: "Jealousy is no more than feeling alone against smiling enemies.",
+    speaker: "Elizabeth Bowen",
+    feeling: jealous
+})
+const jealousThree = new Quote ({
+    content: "The jealous are troublesome to others, but a torment to themselves.",
+    speaker: "William Penn",
+    feeling: jealous
+})
+const jealousFour = new Quote ({
+    content: "Jealousy is a mental cancer.",
+    speaker: "B.C. Forbes",
+    feeling: jealous
+})
+const jealousFive = new Quote ({
+    content: "Jealousy is just love and hate at the same time.",
+    speaker: "Drake",
+    feeling: jealous
+})
+const jealousSix = new Quote ({
+    content: "You can be the moon and still be jealous of the stars.",
+    speaker: "Gary Allen",
+    feeling: jealous
+})
+const betrayedOne = new Quote ({
+    content: "It is easier to forgive an enemy than to forgive a friend.",
+    speaker: "William Blake",
+    feeling: betrayed
+})
+const betrayedTwo = new Quote ({
+    content: "Every betrayal contains a perfect moment, a coin stamped heads or tails with salvation on the other side.",
+    speaker: "Barbara Kingsolver",
+    feeling: betrayed
+})
+const betrayedThree = new Quote ({
+    content: "Betrayal is the only truth that sticks.",
+    speaker: "Arthur Miller",
+    feeling: betrayed
+})
+const betrayedFour = new Quote ({
+    content: "The weak can never forgive. Forgiveness is the attribute of the strong.",
+    speaker: "Mahatma Gandhi, Indian activist",
+    feeling: betrayed
+})
+const betrayedFive = new Quote ({
+    content: "Forgiveness says you are given another chance to make a new beginning.",
+    speaker: "Desmond Tutu",
+    feeling: betrayed
+})
+const betrayedSix = new Quote ({
+    content: "Mistakes are always forgivable if one has the courage to admit them.",
+    speaker: "Bruce Lee",
+    feeling: betrayed
+})
+const lonelyOne = new Quote ({
+    content: "The only time we waste is the time we spend thinking we are alone.",
+    speaker: "Mitch Albom",
+    feeling: lonely
+})
+const lonelyTwo = new Quote ({
+    content: "You are not a drop in the ocean. You are the entire ocean in a drop.",
+    speaker: "Rumi",
+    feeling: lonely
+})
+const lonelyThree = new Quote ({
+    content: "I wish I could show you when you are lonely or in darkness the astonishing light of your own being.",
+    speaker: "Hafiz of Persia",
+    feeling: lonely
+})
+const lonelyFour = new Quote ({
+    content: "The soul that sees beauty may sometimes walk alone.",
+    speaker: "Johann Wolfgange Von Goethe",
+    feeling: lonely
+})
+const lonelyFive = new Quote ({
+    content: "People are lonely because they build walls instead of bridges",
+    speaker: "Joseph F. Newton Men",
+    feeling: lonely
+})
+const lonelySix = new Quote ({
+    content: "We all carry, inside us, people who came before us.",
+    speaker: "Liam Callanan",
+    feeling: lonely
+})
+const afraidOne = new Quote ({
+    content: "Avoiding danger is no safer in the long run than outright exposure. The fearful are caught as often as the bold.",
+    speaker: "Helen Keller",
+    feeling: afraid
+})
+const afraidTwo = new Quote ({
+    content: "One of the greatest discoveries a man make, one of his great surprises, is to find he can do what he was afraid he couldn't do.",
+    speaker: "Henry Ford, American entrepreneur",
+    feeling: afraid
+})
+const afraidThree = new Quote ({
+    content: "I have learned over the years that when one’s mind is made up, this diminishes fear; knowing what must be done does away with fear.",
+    speaker: "Rosa Parks, American activist",
+    feeling: afraid
+})
+const afraidFour = new Quote ({
+    content: "I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear.",
+    speaker: "Nelson Mandela",
+    feeling: afraid
+})
+const afraidFive = new Quote ({
+    content: "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
+    speaker: "Marie Curie",
+    feeling: afraid
+})
+const afraidSix = new Quote ({
+    content: "Being brave isn’t the absence of fear. Being brave is having that fear but finding a way through it.",
+    speaker: "Bear Grylls, British veteran & survivalist",
+    feeling: afraid
+})
 const sufferingOne = new Quote ({
     content: "Happiness is not something you postpone for the future; it is something you design for the present.",
     speaker: "Jim Rohn, American entrepreneur and author",
@@ -250,11 +370,37 @@ const sufferingSix = new Quote ({
     speaker: "Nana Mouskouri, Greek singer",
     feeling: suffering
 })
-const lonelyOne = new Quote ({
-    content: "The only time we waste is the time we spend thinking we are alone.",
-    speaker: "Mitch Albom",
-    feeling: lonely
+const angryOne = new Quote ({
+    content: "Holding on to anger is like grasping a hot coal with the intent of throwing it at someone else; you are the one who gets burned.",
+    speaker: "Buddha",
+    feeling: angry
 })
+const angryTwo = new Quote ({
+    content: "Bitterness is like cancer. It eats upon the host. But anger is like fire. It burns it all clean.",
+    speaker: "Maya Angelou",
+    feeling: angry
+})
+const angryThree = new Quote ({
+    content: "The truth will set you free, but first it will piss you off.",
+    speaker: "Gloria Steinem",
+    feeling: angry
+})
+const angryFour = new Quote ({
+    content: "When angry, count four. When very angry, swear.",
+    speaker: "Mark Twain, American author",
+    feeling: angry
+})
+const angryFive = new Quote ({
+    content: "Get mad, then get over it.",
+    speaker: "Colin Powell",
+    feeling: angry
+})
+const angrySix = new Quote ({
+    content: "A man can't eat anger for breakfast and sleep with it at night and not suffer damage to his soul.",
+    speaker: "Garrison Keillor",
+    feeling: angry
+})
+
 
 
 
@@ -276,7 +422,12 @@ User.remove({})
     amazedOne, amazedTwo, amazedThree, amazedFour, amazedFive, amazedSix,
     reflectiveOne, reflectiveTwo, reflectiveThree, reflectiveFour, reflectiveFive, reflectiveSix,
     selfPityOne, selfPityTwo, selfPityThree, selfPityFour, selfPityFive, selfPitySix,
-    lonelyOne, sufferingOne, sufferingTwo, sufferingThree, sufferingFour, sufferingFive, sufferingSix,
+    jealousOne, jealousTwo, jealousThree, jealousFour, jealousFive, jealousSix,
+    betrayedOne, betrayedTwo, betrayedThree, betrayedFour, betrayedFive, betrayedSix,
+    lonelyOne, lonelyTwo, lonelyThree, lonelyFour, lonelyFive, lonelySix,
+    afraidOne, afraidTwo, afraidThree, afraidFour, afraidFive, afraidSix,
+    sufferingOne, sufferingTwo, sufferingThree, sufferingFour, sufferingFive, sufferingSix,
+    angryOne, angryTwo, angryThree, angryFour, angryFive, angrySix
 ]))
 .then(()=> Feeling.insertMany([loved, happy, joyful, amazed, reflective, selfPity, jealous, betrayed, lonely, afraid, suffering, angry]))
 .then(()=> newUser.save())
