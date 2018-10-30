@@ -16,7 +16,6 @@ const quoteController = {
     .then(updatedQuote => {
       res.redirect(`/quote/${updatedQuote._id}`)
     })
-  
   },
   show: (req, res) => {
     console.log("show")

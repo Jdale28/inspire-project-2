@@ -1,0 +1,22 @@
+<h2>Edit This User!</h2>
+<a href="/">Return to Home Page</a>
+<div id="edit-form" class="user-container-show">
+    <form action="/user/{{user._id}}?_method=PATCH" method="POST">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" value="{{user.name}}">
+        </div>
+        <div>
+            <label for="age">Age: </label>
+            <input type="text" name="age" value="{{user.age}}">
+        </div>
+        <div>
+            <label for="sex">Sex: </label>
+            <input type="text" name="sex" value="{{user.sex}}">
+        </div>
+        <button type="submit">Submit this updated User</button>
+    </form>
+    <form action="/user/{{user._id}}?_method=DELETE" method="POST">
+        <button type="submit">delete this user</button>
+    </form>
+</div>

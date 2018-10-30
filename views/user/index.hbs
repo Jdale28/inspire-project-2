@@ -1,3 +1,22 @@
 <h1 class="userHeader">
     Your profile and favorite quotes:
 </h1>
+
+<div class="user-list-container"></div>
+{{#each user}}
+  <div class="card cardContent" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="user-title">{{name}}</h5>
+      <h6 class="user-age">{{age}}-year-old</h6>
+      <h6 class="user-sex">{{sex}}</h6>
+      <a class="card-path" href="/user/{{_id}}/edit">Edit or Delete this User</a>
+    </div>
+  </div>
+    <div class="userFavQuotes">
+        {{#each favoriteQuotes}}
+            {{content}}
+            {{speaker}}
+        {{/each}}
+    </div>
+{{/each}}
+</div>

@@ -405,9 +405,9 @@ const angrySix = new Quote ({
 
 
 const newUser = new User({
-    name: "Jordan",
+    name: "Jordan Dale",
     age: 30,
-    sex: "male",
+    sex: "Male",
     favoriteQuotes: [lovedOne, happyThree, happyFive],
     feeling: [loved, reflective]
 })

@@ -8,7 +8,11 @@ const feelingController = require('../controller/feeling')
 /* GET home page. */
 router.get('/', app.index)
 
+// Routes for users
 router.get('/user', userController.index)
+router.post('/user/:id', userController.create)
+router.patch('/user/:id', userController.update)
+router.get('/user/:id/edit', userController.edit)
 
 router.get('/feeling', feelingController.list)
 

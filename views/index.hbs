@@ -1,30 +1,33 @@
 {{!-- Upper header content on homepage --}}
 <h1 id="inspire-name">{{title}}</h1>
+
 <div class="missionStatement">
-    <p>Our concept is simple: The World can be hard. It can knock you down and sometimes you can’t find you way back
-        onto your feet.
-        <br>At {{title}}, at your fingertips are the words and powerful emotions of mankind’s most inspirational
-        speakers, influencers and humanitarians.
-        <br>They’re all here with one mission: to Inspire you, to motivate you, and to remind you of the power of words
-        and the compassion of the human spirit.
-        <br><br>Always Remember:
-        </p>
+  <p>Our concept is simple: The World can be hard. It can knock you down and sometimes you can’t find you way back
+    onto your feet.
+    <br>At {{title}}, at your fingertips are the words and powerful emotions of mankind’s most inspirational
+    speakers, influencers and humanitarians.
+    <br>They’re all here with one mission: to Inspire you, to motivate you, and to remind you of the power of words
+    and the compassion of the human spirit.
+    <br><br>Always Remember:
+  </p>
 </div>
 <p class="homeQuote">“You cannot do a kindness too soon, for you never know how soon it will be too late.”
-    <br>-Ralph Waldo Emerson, American Author</p>
+  <br>-Ralph Waldo Emerson, American Author</p>
 
 {{!-- The ask, directs to below buttons --}}
 <p class="howQuestion">How are you feeling today? Choose one below:</p>
 
 {{!-- Contains the emojis, texts and buttons associated with user feelings --}}
 <div class="emotionContainer">
-    <div class="columnOneText">
-        {{#each feeling}}
-        <button type="button" class="btn btn-outline-primary emotionText" data-toggle="modal" data-target="#exampleModal" id="{{_id}}">{{name}}</button>
-        {{/each}}
-    </div>
+  <div class="columnOneText">
+    {{#each feeling}}
+    <button type="button" class="btn btn-outline-primary emotionText" data-toggle="modal" data-target="#exampleModal"
+      id="{{_id}}">{{name}}</button>
+    {{/each}}
+  </div>
 </div>
-        
+
+<form action="/user/{{userId}}" method="POST">
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -36,20 +39,21 @@
       <div class="popup {{feeling}}">
         <h5 class="modal-title" id="exampleModalLabel">"{{content}}"</h5>
         <div class="modal-body">
-            <p class="quote-speaker">{{speaker}}</p>
+          <p class="quote-speaker">{{speaker}}</p>
         </div>
       </div>
       {{/each}}
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         <button type="button" class="shuffle btn btn-primary">Shuffle</button>
-        <button type="button" class="btn btn-primary">Save this quote</button>
+        {{!-- <button type="button" class="btn btn-primary">Save Quote</button> --}}
       </div>
     </div>
   </div>
 </div>
-
+</form>
 {{!-- Version Two homepage Edit Text
 <p>That’s not all -- you’ll be able to connect with people from around the world and share your own inspirations.
-<br>Not a wordsmith? No problem, simply send some of your favorite quotes to help people through the tough
-times. Because remember:</p> --}}
+  <br>Not a wordsmith? No problem, simply send some of your favorite quotes to help people through the tough
+  times. Because remember:</p> --}}
+{{!-- Save a favorite quote to a user  --}}
