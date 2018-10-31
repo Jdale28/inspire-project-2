@@ -174,7 +174,7 @@ button {
   margin: 0 25vw 0 20vh;
 }
 
-.createHeader, .userHeader, .quoteListHeader, .newResultHeader {
+.createHeader, .userHeader, .quoteListHeader, .newResultHeader, .editHeader {
   font-family: "Dancing Script", Arial, serif;
   font-size: 5rem;
   margin: 2vh 0 0 0;
@@ -213,4 +213,14 @@ button {
   align-content: center;
   max-width: 80vw;
   margin: auto;
+}
+
+.editInput {
+  margin: 4vh 0;
+}
+
+.editSubmit, .deleteQuote {
+  font-size: 1.5rem;
+  padding: 15px;
+  margin: 2vh 0;
 }

@@ -1,21 +1,24 @@
-<h2>Edit This Quote!</h2>
-{{!-- return to homepage button --}}
-<a class="homepageButton" href="/">Return to Home Page</a>
+<h2 class="editHeader">Edit This Quote!</h2>
 <div id="edit-form" class="quote-container-show">
   {{!-- Form to edit populated quote --}}
   <form action="/quote/{{quote._id}}?_method=PATCH" method="POST">
-    <div>
+    <div class="newQuoteContent editInput">
       <label for="content">Content: </label>
       <input type="text" name="content" value="{{quote.content}}">
     </div>
-    <div>
+    <div class="newQuoteContent editInput">
       <label for="speaker">Speaker: </label>
       <input type="text" name="speaker" value="{{quote.speaker}}">
     </div>
-    <button type="submit">Submit this updated Quote</button>
+    <button class="deleteButton editSubmit" type="submit">Submit this updated Quote</button>
   </form>
   {{!-- delete button --}}
   <form action="/quote/{{quote._id}}?_method=DELETE" method="POST">
-    <button class="deleteButton" type="submit">Delete this quote</button>
+    <button class="deleteButton deleteQuote" type="submit">Delete this quote</button>
   </form>
 </div>
+{{!-- 
+deleteButton
+card-path
+newContent
+newSpeaker --}}

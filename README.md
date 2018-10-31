@@ -24,7 +24,7 @@ For this project, I created a social app that aims to turn bad days into good da
 
 ![Trello](https://trello.com/b/C6K0J8Ip/inspire-trello-board)
 ![Wireframe](https://www.figma.com/file/g3buY6FwvGFzwg4TMHnwPlch/Inspire-Project-2)
-![](../public/images/Lucid-Charts-ERD.png)
+![ERD](public/images/Lucid-Charts-ERD.png)
 
 
 ## Future Development
