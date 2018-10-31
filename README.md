@@ -22,8 +22,9 @@ For this project, I created a social app that aims to turn bad days into good da
 
 ## Wireframe
 
-![Trello](https://trello.com/b/C6K0J8Ip/inspire-trello-board)
-![Wireframe](https://www.figma.com/file/g3buY6FwvGFzwg4TMHnwPlch/Inspire-Project-2)
+**Figma Wireframe** <https://www.figma.com/file/g3buY6FwvGFzwg4TMHnwPlch/Inspire-Project-2?node-id=0%3A1>
+**Trello Workflow Board** <(https://trello.com/b/C6K0J8Ip/inspire-trello-board)>
+ERD User flow
 ![ERD](public/images/Lucid-Charts-ERD.png)
 
 
