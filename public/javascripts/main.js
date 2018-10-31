@@ -48,6 +48,7 @@ $('.shuffle').click(function (e) {
 
 
 // On hover functions to change to standard blue/white theme
+
 $('.newQuoteCreateButton').hover(function(){
   $(this).css("background-color", "blue")
   $(this).css("color", "white")
