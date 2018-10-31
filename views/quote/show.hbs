@@ -1,17 +1,17 @@
 <main>
-    <h2 class="newResultHeader">You've created this quote:<br><br></h2>
+    <h2 class="newResultHeader">Here's the quote!<br><br></h2>
     <p class="newContent">
         "{{quote.content}}"
     </p>
     <h3 class="newSpeaker">{{quote.speaker}}</h3>
 
     {{!-- edit quote --}}
-    <a class="card-path" href="/quote/{{quote._id}}/edit">Edit Your Quote</a>
+    <a class="card-path" href="/quote/{{quote._id}}/edit">Edit this Quote</a>
     <br><br>
     {{!-- Delete quote --}}
     <form action="/quote/{{quote._id}}?_method=DELETE" method="POST">
-        <button type="submit">Delete this Quote</button>
+        <button class="deleteButton" type="submit">Delete this Quote</button>
     </form>
 
-    <a href="/">Return to Home Page</a>
+    <a class="homepageButton" href="/">Return to Home Page</a>
 </main>

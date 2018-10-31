@@ -48,6 +48,8 @@ $('.shuffle').click(function (e) {
   $(quote[num]).removeClass('disappear')
 })
 
+
+// On hover functions to change to standard blue/white theme
 $('.newQuoteCreateButton').hover(function(){
   $(this).css("background-color", "blue")
   $(this).css("color", "white")
@@ -57,6 +59,22 @@ $('.newQuoteCreateButton').hover(function(){
 })
 
 $('.card-path').hover(function(){
+  $(this).css("background-color", "blue")
+  $(this).css("color", "white")
+  }, function(){
+  $(this).css("background-color", "white")
+  $(this).css("color", "black")
+})
+
+$('.deleteButton').hover(function(){
+  $(this).css("background-color", "blue")
+  $(this).css("color", "white")
+  }, function(){
+  $(this).css("background-color", "white")
+  $(this).css("color", "black")
+})
+
+$('.homepageButton').hover(function(){
   $(this).css("background-color", "blue")
   $(this).css("color", "white")
   }, function(){

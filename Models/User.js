@@ -5,11 +5,10 @@ const User = mongoose.Schema ({
     name: String,
     age: Number,
     sex: String,
-    favoriteQuotes: [],
-    // favoriteQuotes: [{
-    //     type: Schema.Types.ObjectId,
-    //     ref: 'Quote'
-    // }],
+    favoriteQuotes: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Quote'
+    }],
     feeling: [{
         type: Schema.Types.ObjectId,
         ref: 'Feeling'

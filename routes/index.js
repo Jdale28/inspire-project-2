@@ -14,6 +14,7 @@ router.post('/user/:id', userController.create)
 router.patch('/user/:id', userController.update)
 router.get('/user/:id/edit', userController.edit)
 
+// Used for development, not linked for public use
 router.get('/feeling', feelingController.list)
 
 // Routes for a new Quote

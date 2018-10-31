@@ -1,9 +1,1 @@
-// var express = require('express');
-// var router = express.Router();
-
-// /* GET users listing. */
-// router.get('/', function(req, res, next) {
-//   res.send('respond with a resource');
-// });
-
-// module.exports = router;
+// This was created by Express Generator, however if I delete the file everything breaks, need to figure out why

@@ -7,7 +7,7 @@ const userController = {
         User.find().populate('favoriteQuotes').then((user) => {
             console.log(user)
             res.render('user/index', {
-                user: user
+                user: user,
             })
         })
     },
@@ -16,7 +16,6 @@ const userController = {
             console.log(req.body)
         })
     },
-
     edit: (req, res) => {
         User.findById(req.params.id).then(user => {
             res.render(`user/edit`, {

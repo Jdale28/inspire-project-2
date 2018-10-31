@@ -113,7 +113,8 @@ a:hover, a:focus {
   flex-wrap: wrap;
   width: 30vw;
   min-height: 30vh;
-  margin: 2vh 0;
+  margin: 2vh 2vh;
+  border: 3px solid blue;
 }
 
 .card-body {
@@ -124,11 +125,18 @@ a:hover, a:focus {
   align-content: space-between;
 }
 
-.card-path {
-  margin: 5vh 1vw 0 1vw;
+.card-path, .homepageButton {
+  margin: 8vh 1vw 0 1vw;
   font-size: .95rem;
   border: 1px solid black;
   padding: 8px 8px;
+}
+
+button {
+  margin: 2vh 2vw 3vh 2vw;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid black;
 }
 
 .user-title, .user-age, .user-sex {
@@ -179,6 +187,7 @@ a:hover, a:focus {
 .createPageText, .newSpeaker {
   font-family: "Calibri", Arial, serif;
   font-size: 1.65rem;
+  margin: 2vh 0 4vh 0;
 }
 
 .newQuoteContent, .newQuoteSpeaker, .newQuoteFeeling {
@@ -199,4 +208,9 @@ a:hover, a:focus {
 .newContent {
   font-size: 3rem;
   font-family: 'Marck Script', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  max-width: 80vw;
+  margin: auto;
 }
