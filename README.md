@@ -32,7 +32,6 @@ _Link to gitHub repo:_
 [GitHub Repository](https://github.com/Jdale28/connectFour)
 
 <br>
-_ERD User flow_
 ![ERD](public/images/Lucid-Charts-ERD.png)
 
 
