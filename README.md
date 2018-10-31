@@ -29,7 +29,7 @@ _Link to workflow Trello Board:_
 [Trello Board](https://trello.com/b/C6K0J8Ip/inspire-trello-board)
 
 _Link to gitHub repo:_
-[GitHub Repository](https://github.com/Jdale28/connectFour)
+[GitHub Repository](https://git.generalassemb.ly/jdale28/Inspire-Project2.git)
 
 
 ![ERD](public/images/Lucid-Charts-ERD.png)

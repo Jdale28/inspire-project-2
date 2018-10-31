@@ -222,47 +222,47 @@ const selfPitySix = new Quote ({
 })
 const jealousOne = new Quote ({
     content: "The jealous are possessed by a mad devil and a dull spirit at the same time.",
-    speaker: "Johann Kaspar Lavater",
+    speaker: "Johann Kaspar Lavater, Swiss poet",
     feeling: jealous
 })
 const jealousTwo = new Quote ({
     content: "Jealousy is no more than feeling alone against smiling enemies.",
-    speaker: "Elizabeth Bowen",
+    speaker: "Elizabeth Bowen, Anglo-Irish novelist",
     feeling: jealous
 })
 const jealousThree = new Quote ({
     content: "The jealous are troublesome to others, but a torment to themselves.",
-    speaker: "William Penn",
+    speaker: "William Penn, English nobleman & writer",
     feeling: jealous
 })
 const jealousFour = new Quote ({
     content: "Jealousy is a mental cancer.",
-    speaker: "B.C. Forbes",
+    speaker: "B.C. Forbes, American financial journalist",
     feeling: jealous
 })
 const jealousFive = new Quote ({
     content: "Jealousy is just love and hate at the same time.",
-    speaker: "Drake",
+    speaker: "Drake, Canadian entertainer & producer",
     feeling: jealous
 })
 const jealousSix = new Quote ({
     content: "You can be the moon and still be jealous of the stars.",
-    speaker: "Gary Allen",
+    speaker: "Gary Allen, American country singer",
     feeling: jealous
 })
 const betrayedOne = new Quote ({
     content: "It is easier to forgive an enemy than to forgive a friend.",
-    speaker: "William Blake",
+    speaker: "William Blake, English poet",
     feeling: betrayed
 })
 const betrayedTwo = new Quote ({
     content: "Every betrayal contains a perfect moment, a coin stamped heads or tails with salvation on the other side.",
-    speaker: "Barbara Kingsolver",
+    speaker: "Barbara Kingsolver, American novelist",
     feeling: betrayed
 })
 const betrayedThree = new Quote ({
     content: "Betrayal is the only truth that sticks.",
-    speaker: "Arthur Miller",
+    speaker: "Arthur Miller, American playwright",
     feeling: betrayed
 })
 const betrayedFour = new Quote ({
@@ -272,47 +272,47 @@ const betrayedFour = new Quote ({
 })
 const betrayedFive = new Quote ({
     content: "Forgiveness says you are given another chance to make a new beginning.",
-    speaker: "Desmond Tutu",
+    speaker: "Desmond Tutu, South African cleric & theologian",
     feeling: betrayed
 })
 const betrayedSix = new Quote ({
     content: "Mistakes are always forgivable if one has the courage to admit them.",
-    speaker: "Bruce Lee",
+    speaker: "Bruce Lee, American actor & martial artist",
     feeling: betrayed
 })
 const lonelyOne = new Quote ({
     content: "The only time we waste is the time we spend thinking we are alone.",
-    speaker: "Mitch Albom",
+    speaker: "Mitch Albom, American author & journalist",
     feeling: lonely
 })
 const lonelyTwo = new Quote ({
     content: "You are not a drop in the ocean. You are the entire ocean in a drop.",
-    speaker: "Rumi",
+    speaker: "Rumi, Persian poet",
     feeling: lonely
 })
 const lonelyThree = new Quote ({
     content: "I wish I could show you when you are lonely or in darkness the astonishing light of your own being.",
-    speaker: "Hafiz of Persia",
+    speaker: "Hafiz of Persia, Persian poet",
     feeling: lonely
 })
 const lonelyFour = new Quote ({
     content: "The soul that sees beauty may sometimes walk alone.",
-    speaker: "Johann Wolfgange Von Goethe",
+    speaker: "Johann Wolfgange Von Goethe, German writer & statesman",
     feeling: lonely
 })
 const lonelyFive = new Quote ({
     content: "People are lonely because they build walls instead of bridges",
-    speaker: "Joseph F. Newton Men",
+    speaker: "Joseph F. Newton, Baptist minister",
     feeling: lonely
 })
 const lonelySix = new Quote ({
     content: "We all carry, inside us, people who came before us.",
-    speaker: "Liam Callanan",
+    speaker: "Liam Callanan, American author & professor",
     feeling: lonely
 })
 const afraidOne = new Quote ({
     content: "Avoiding danger is no safer in the long run than outright exposure. The fearful are caught as often as the bold.",
-    speaker: "Helen Keller",
+    speaker: "Helen Keller, American author & activist",
     feeling: afraid
 })
 const afraidTwo = new Quote ({
@@ -327,12 +327,12 @@ const afraidThree = new Quote ({
 })
 const afraidFour = new Quote ({
     content: "I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear.",
-    speaker: "Nelson Mandela",
+    speaker: "Nelson Mandela, South African politican & activist",
     feeling: afraid
 })
 const afraidFive = new Quote ({
     content: "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.",
-    speaker: "Marie Curie",
+    speaker: "Marie Curie, Polish physicist & chemist",
     feeling: afraid
 })
 const afraidSix = new Quote ({
@@ -342,7 +342,7 @@ const afraidSix = new Quote ({
 })
 const sufferingOne = new Quote ({
     content: "Happiness is not something you postpone for the future; it is something you design for the present.",
-    speaker: "Jim Rohn, American entrepreneur and author",
+    speaker: "Jim Rohn, American entrepreneur & author",
     feeling: suffering
 })
 const sufferingTwo = new Quote ({
@@ -362,7 +362,7 @@ const sufferingFour = new Quote ({
 })
 const sufferingFive = new Quote ({
     content: "Happiness is not something ready made. It comes from your own actions.",
-    speaker: "Dalai Lama, religious leader and activist",
+    speaker: "Dalai Lama, Religious leader & activist",
     feeling: suffering
 })
 const sufferingSix = new Quote ({
@@ -372,17 +372,17 @@ const sufferingSix = new Quote ({
 })
 const angryOne = new Quote ({
     content: "Holding on to anger is like grasping a hot coal with the intent of throwing it at someone else; you are the one who gets burned.",
-    speaker: "Buddha",
+    speaker: "Buddha, Religious leader",
     feeling: angry
 })
 const angryTwo = new Quote ({
     content: "Bitterness is like cancer. It eats upon the host. But anger is like fire. It burns it all clean.",
-    speaker: "Maya Angelou",
+    speaker: "Maya Angelou, American poet & Civil Rights activist",
     feeling: angry
 })
 const angryThree = new Quote ({
     content: "The truth will set you free, but first it will piss you off.",
-    speaker: "Gloria Steinem",
+    speaker: "Gloria Steinem, American journalist & activist",
     feeling: angry
 })
 const angryFour = new Quote ({
@@ -392,12 +392,12 @@ const angryFour = new Quote ({
 })
 const angryFive = new Quote ({
     content: "Get mad, then get over it.",
-    speaker: "Colin Powell",
+    speaker: "Colin Powell, American general",
     feeling: angry
 })
 const angrySix = new Quote ({
     content: "A man can't eat anger for breakfast and sleep with it at night and not suffer damage to his soul.",
-    speaker: "Garrison Keillor",
+    speaker: "Garrison Keillor, American author",
     feeling: angry
 })
 
