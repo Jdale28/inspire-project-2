@@ -31,7 +31,7 @@ _Link to workflow Trello Board:_
 _Link to gitHub repo:_
 [GitHub Repository](https://github.com/Jdale28/connectFour)
 
-<br>
+
 ![ERD](public/images/Lucid-Charts-ERD.png)
 
 
