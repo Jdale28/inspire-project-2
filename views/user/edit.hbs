@@ -1,6 +1,7 @@
 <h2>Edit This User!</h2>
 <a href="/">Return to Home Page</a>
 <div id="edit-form" class="user-container-show">
+    {{!-- Edit user form --}}
     <form action="/user/{{user._id}}?_method=PATCH" method="POST">
         <div>
             <label for="name">Name: </label>
@@ -16,6 +17,7 @@
         </div>
         <button type="submit">Submit this updated User</button>
     </form>
+    {{!-- delete button --}}
     <form action="/user/{{user._id}}?_method=DELETE" method="POST">
         <button class="deleteButton" type="submit">delete this user</button>
     </form>

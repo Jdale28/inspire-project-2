@@ -17,8 +17,6 @@ $('.emotionText').click(function (e) {
   $(quote[num]).removeClass('disappear')
 })
 
-// On click, on esc, or on click off of modal
-
 
 $('.shuffle').click(function (e) {
   // Click on a button, push quotes pertaining to that emotion into array
